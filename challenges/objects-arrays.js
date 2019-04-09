@@ -13,7 +13,7 @@ function Dinosaurs(obj){
   this.period = obj.period;
 }
 
-const tyran = new Dinosaurs({
+const Tyran = new Dinosaurs({
 name: 'tyrannosaurus',
 diet: 'carnivorous',
 weight: '7000kg',
@@ -21,7 +21,7 @@ length: '12m',
 period: 'Late Cretaceious'
 });
 
-const steg = new Dinosaurs({
+const Steg = new Dinosaurs({
   name: 'stegosaurus',
   diet: 'herbivorous',
   weight: '2000kg',
@@ -29,7 +29,7 @@ const steg = new Dinosaurs({
   period: 'Late Jurassic'
   });
 
-  const veloci = new Dinosaurs({
+  const Veloci = new Dinosaurs({
     name: 'velociraptor',
     diet: 'carnivorous',
     weight: '15kg',
@@ -49,20 +49,24 @@ const steg = new Dinosaurs({
 
 
 
-console.log(tyran["weight"])
+console.log(Tyran["weight"])
 
 // What was the diet of a velociraptor?
-//console.log();
+console.log(Veloci["diet"]);
 
 // How long was a stegosaurus?
-//console.log();
+console.log(Steg["length"]);
 
 // What time period did tyrannosaurus live in?
-//console.log();
+console.log(Tyran["period"]);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-//console.log();
+Tyran.prototype.roar() = function(){
+  return "RAWERSRARARWERSARARARRRR!";
+  
+}
+console.log(roar);
 
 
 // ==== Arrays ====

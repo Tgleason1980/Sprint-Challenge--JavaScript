@@ -35,7 +35,7 @@ function greeting(param1, param2){
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-
+because any function nested inside of a function has access to the external functions variables.
 // Explanation: 
 
 
